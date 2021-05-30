@@ -46,10 +46,10 @@ public class Doctor {
 	
 	public void mostrar() {
 		System.out.println("\n\t---------------");
-		System.out.println("ID Medico: " + id);
-		System.out.println("Nombre: " + name);
-		System.out.println("Apellidos: " + lastname);
-		System.out.println("Especialidad: " + specialization);
+		System.out.println("ID of the doctor: " + id);
+		System.out.println("Name: " + name);
+		System.out.println("Lastname: " + lastname);
+		System.out.println("Specialization: " + specialization);
 		System.out.println("\t---------------");
 	}
 }
