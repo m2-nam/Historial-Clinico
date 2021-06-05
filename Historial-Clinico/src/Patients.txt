@@ -1,0 +1,49 @@
+
+DNI: 121212
+Name: Yess
+LastName: Medina
+Sex: F
+Age: 24
+Allergies: Textiles
+Deseases: 
+--------------------
+DNI: 131313
+Name: Karen
+LastName: Garcia
+Sex: F
+Age: 20
+Allergies: 
+Deseases: 
+--------------------
+DNI: 101010
+Name: Elizabeth
+LastName: Jones
+Sex: F
+Age: 30
+Allergies: 
+Deseases: 
+--------------------
+DNI: 111111
+Name: Edmundo
+LastName: Llaza
+Sex: M
+Age: 23
+Allergies: Sol
+Deseases: Tos Crónica
+--------------------
+DNI: 141414
+Name: Aarom
+LastName: Miranda
+Sex: M
+Age: 21
+Allergies: 
+Deseases: Asma
+--------------------
+DNI: 151515
+Name: Diana
+LastName: Park
+Sex: F
+Age: 18
+Allergies: Polvo
+Deseases: 
+--------------------
