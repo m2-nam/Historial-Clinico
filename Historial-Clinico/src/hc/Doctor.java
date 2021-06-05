@@ -1,7 +1,7 @@
 package hc;
 
 public class Doctor {
-    private String id;
+	private String id;
     private String name;
     private String lastname;
     private String specialization;
@@ -44,12 +44,11 @@ public class Doctor {
 		this.specialization = specialization;
 	}
 	
-	public void mostrar() {
-		System.out.println("\n\t---------------");
-		System.out.println("ID of the doctor: " + id);
-		System.out.println("Name: " + name);
-		System.out.println("Lastname: " + lastname);
-		System.out.println("Specialization: " + specialization);
-		System.out.println("\t---------------");
+	
+	public void Show() {
+		System.out.println("ID of the doctor: " + id + 
+		"\nName: " + name + "\nLastname: " + lastname+
+		"\nSpecialization: " + specialization);
 	}
+	
 }
