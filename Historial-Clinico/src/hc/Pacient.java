@@ -1,3 +1,4 @@
+package hc;
 public class Pacient {
     private int dni;
     private String name;
