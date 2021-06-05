@@ -4,13 +4,17 @@ public class Pacient {
     private String lastName;
     private char sex;
     private int age;
+    private String allergies;
+    private String deseases;
 
-    public Pacient(int dni, String name, String lastName, char sex, int age) {
+    public Pacient(int dni, String name, String lastName, char sex, int age, String allergies, String deseases) {
         this.dni = dni;
         this.name = name;
         this.lastName = lastName;
         this.sex = sex;
         this.age = age;
+        this.allergies = allergies;
+        this.deseases = deseases;
     }
     public int getDni() {
         return dni;
@@ -42,9 +46,23 @@ public class Pacient {
     public void setAge(int age) {
         this.age = age;
     }
+    public String getAllergies() {
+        return allergies;
+    }
+    public void setAllergies(String allergies) {
+        this.allergies = allergies;
+    }
+    public String getDeseases() {
+        return deseases;
+    }
+    public void setDeseases(String deseases) {
+        this.deseases = deseases;
+    }
     @Override
     public String toString() {
-        String text = "PACIENTE \nDNI: " + dni + "\nName: " + name + "\nLastName: " + lastName + "\nSex: " + sex + "\nAge: " + age;
+        String text = "\nDNI: " + dni + "\nName: " + name + "\nLastName: " + 
+        lastName + "\nSex: " + sex + "\nAge: " + age + "\nAllergies: " + 
+        allergies + "\nDeseases: " + deseases + "\n--------------------";
         return text;
     }
 }
