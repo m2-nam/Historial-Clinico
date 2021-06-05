@@ -1,10 +1,10 @@
 package hc;
 import java.util.ArrayList;
 import java.util.Scanner;
-public final class GestorDoc{
+public final class GestorDoctor{
     private ArrayList<Doctor> doctors;
     private Scanner keyboard;
-    public GestorDoc(){
+    public GestorDoctor(){
         doctors = new ArrayList<Doctor>();
         keyboard = new Scanner(System.in);
     }
