@@ -17,7 +17,7 @@ public final class GestorDoctor{
 		System.out.print("LastName: ");
 		String apellidos = keyboard.nextLine();
 		keyboard.nextLine();
-		Doctor newDoctor = new Doctor(id, name, lastname, specialization);
+		Doctor newDoctor = new Doctor(id, name, lastname, specialization)
 		return doctors.add(newDoctor);
 	}
     public void showDoctors() {

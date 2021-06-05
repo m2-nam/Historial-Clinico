@@ -46,12 +46,9 @@ public class Doctor {
 	
 	
 	public void Show() {
-		System.out.println("\n\t---------------");
-		System.out.println("ID of the doctor: " + id);
-		System.out.println("Name: " + name);
-		System.out.println("Lastname: " + lastname);
-		System.out.println("Specialization: " + specialization);
-		System.out.println("\t---------------");
+		System.out.println("ID of the doctor: " + id + 
+		"\nName: " + name + "\nLastname: " + lastname+
+		"\nSpecialization: " + specialization);
 	}
 	
 }
