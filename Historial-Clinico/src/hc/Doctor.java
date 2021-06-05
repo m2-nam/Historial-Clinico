@@ -45,8 +45,9 @@ public class Doctor {
 	}
 	
 	
-	public void Show() {
-		System.out.println("ID of the doctor: " + id + 
+	@Override
+	public String toString() {
+		return System.out.println("ID of the doctor: " + id + 
 		"\nName: " + name + "\nLastname: " + lastname+
 		"\nSpecialization: " + specialization);
 	}
