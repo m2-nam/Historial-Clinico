@@ -17,6 +17,11 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
     }
+    public static String  palabraEliminar(String oracion,String palabra) {
+    if(oracion.contains(palabra))
+        return oracion.replaceAll(palabra, "");
+    return oracion;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -197,6 +202,57 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+        
+    private void txtDniKeyTyped(java.awt.event.KeyEvent evt) {                                
+        char car = evt.getKeyChar();
+        if((car < '0' || car > '9')) evt.consume();
+    }                               
+
+    private void txtNameKeyTyped(java.awt.event.KeyEvent evt) {                                 
+        char car = evt.getKeyChar();
+        if((car < 'a' || car > 'z')) evt.consume();
+    }                                
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        String dniP = "DNI: "+txtDni.getText();
+        String key1 = "Name: ";
+        String key2 = "LastName: ";
+        String key3 = "Sex: ";
+        String key4 = "Age: ";
+        String key5 = "Allergies: ";
+        String key6 = "Deseases: ";
+        
+        try{
+            String path = "../Historial-Clinico/src/Patients.txt";
+            File fileP = new File(path);
+            
+            if (!fileP.exists()){
+                fileP.createNewFile();
+            }
+            
+            BufferedReader br = new BufferedReader(new FileReader(fileP));
+            System.out.println("entro");
+            String linea = "";
+            boolean found = false;
+            while ((linea= br.readLine())!=null) {
+
+                if(linea.equalsIgnoreCase(dniP)) {
+                    System.out.println(linea);
+                    txtName.setText(palabraEliminar(br.readLine(), key1));
+                    txtLastName.setText(palabraEliminar(br.readLine(), key2));
+                    txtSexo.setText(palabraEliminar(br.readLine(), key3));
+                    txtEdad.setText(palabraEliminar(br.readLine(), key4));
+                    txtAlergias.setText(palabraEliminar(br.readLine(), key5));
+                    txtEnfermedades.setText(palabraEliminar(br.readLine(), key6)); 
+                    found = true;
+                    break;
+                }
+            }
+            if(!found) JOptionPane.showMessageDialog(null, "Paciente no encontrado");
+        }
+        catch (IOException e){
+        }
+    }
 
     /**
      * @param args the command line arguments
